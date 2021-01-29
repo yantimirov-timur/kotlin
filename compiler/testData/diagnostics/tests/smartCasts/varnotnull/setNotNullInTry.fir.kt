@@ -10,5 +10,5 @@ fun foo() {
     } catch (ex: Exception) {}
     bar(s)
     if (s != null) { }
-    s.<!UNSAFE_CALL!>hashCode<!>()
+    s<!UNSAFE_CALL!>.<!>hashCode()
 }

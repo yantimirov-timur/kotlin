@@ -12,5 +12,5 @@ fun foo() {
     finally {
         bar()
     }
-    s.<!UNSAFE_CALL!>hashCode<!>()
+    s<!UNSAFE_CALL!>.<!>hashCode()
 }

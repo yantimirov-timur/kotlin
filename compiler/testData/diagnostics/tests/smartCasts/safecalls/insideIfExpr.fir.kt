@@ -10,14 +10,14 @@ fun foo() {
     } else {
         s?.length
     }
-    ss.<!UNSAFE_CALL!>hashCode<!>() // Smart-cast to Int, should be unsafe call
+    ss<!UNSAFE_CALL!>.<!>hashCode() // Smart-cast to Int, should be unsafe call
     val sss = if (true) {
         s?.copy
     }
     else {
         s?.copy
     }
-    sss.<!UNSAFE_CALL!>length<!>
+    sss<!UNSAFE_CALL!>.<!>length
 }
 
 class My {
@@ -31,13 +31,13 @@ class My {
         } else {
             s?.length
         }
-        ss.<!UNSAFE_CALL!>hashCode<!>()
+        ss<!UNSAFE_CALL!>.<!>hashCode()
         val sss = if (true) {
             s?.copy2
         }
         else {
             s?.copy2
         }
-        sss.<!UNSAFE_CALL!>length<!>
+        sss<!UNSAFE_CALL!>.<!>length
     }
 }
