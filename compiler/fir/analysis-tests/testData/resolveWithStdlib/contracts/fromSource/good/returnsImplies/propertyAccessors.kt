@@ -4,7 +4,7 @@ interface A {
     fun foo()
 }
 
-var Any?.isNotNull: Boolean
+var Any?.isNotNull: <!WRONG_SETTER_PARAMETER_TYPE{LT}!>Boolean<!>
     get() {
         <!WRONG_IMPLIES_CONDITION!>contract {
             returns(true) implies (this@isNotNull != null)

@@ -389,6 +389,11 @@ public class LazyBodyIsNotTouchedTilContractsPhaseTestGenerated extends Abstract
         runTest("compiler/fir/analysis-tests/testData/resolve/sealedClass.kt");
     }
 
+    @TestMetadata("settersType.kt")
+    public void testSettersType() throws Exception {
+        runTest("compiler/fir/analysis-tests/testData/resolve/settersType.kt");
+    }
+
     @TestMetadata("simpleClass.kt")
     public void testSimpleClass() throws Exception {
         runTest("compiler/fir/analysis-tests/testData/resolve/simpleClass.kt");

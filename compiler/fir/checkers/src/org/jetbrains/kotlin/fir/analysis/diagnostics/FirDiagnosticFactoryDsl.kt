@@ -8,6 +8,7 @@ package org.jetbrains.kotlin.fir.analysis.diagnostics
 import com.intellij.psi.PsiElement
 import org.jetbrains.kotlin.diagnostics.*
 import org.jetbrains.kotlin.fir.FirSourceElement
+import org.jetbrains.kotlin.psi.KtParameter
 import kotlin.properties.ReadOnlyProperty
 import kotlin.reflect.KProperty
 

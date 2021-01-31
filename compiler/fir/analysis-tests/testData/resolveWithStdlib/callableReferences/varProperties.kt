@@ -2,7 +2,7 @@ import kotlin.reflect.KMutableProperty0
 import kotlin.reflect.KMutableProperty1
 
 class A {
-    var bar: Int = 1
+    var bar:Int = 1
 }
 
 var bar = 1

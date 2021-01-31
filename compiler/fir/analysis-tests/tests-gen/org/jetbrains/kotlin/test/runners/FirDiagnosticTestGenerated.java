@@ -459,6 +459,12 @@ public class FirDiagnosticTestGenerated extends AbstractFirDiagnosticTest {
         }
 
         @Test
+        @TestMetadata("settersType.kt")
+        public void testSettersType() throws Exception {
+            runTest("compiler/fir/analysis-tests/testData/resolve/settersType.kt");
+        }
+
+        @Test
         @TestMetadata("simpleClass.kt")
         public void testSimpleClass() throws Exception {
             runTest("compiler/fir/analysis-tests/testData/resolve/simpleClass.kt");
